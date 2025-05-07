@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: serif;
@@ -10,9 +9,6 @@ p{
     font-family: sans-serif;
 }
 body{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
 header{
@@ -24,6 +20,9 @@ header{
     color: white;
     padding: 15px;
     text-align: center;
+}
+.main-title span{
+    color: #ffe920;
 }
 .list{
     display: flex;
@@ -37,32 +36,74 @@ header{
     text-decoration: none;
     font-size: 22px;
 }
+.nav-link:hover{
+    text-decoration: underline;
+    text-decoration-color: #fdfdfde7;
+    text-underline-offset: 4px;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
 .card{
-    grid-row: 2;
-    display: flex;
-    flex-direction: column;
     margin: 20px 0;
     border: 2px solid #0003;
     border-radius: 10px;
     overflow: hidden;
 }
 .card h2{
-    background-color: navy;
+    display: block;
+    background-color: #164583;
     color: #fff;
     text-align: center;
     padding: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .card__1{
     grid-column: 1 / 2;
-    margin-left: 60px;
-    width: 500px;
+    margin-left: 30px;
+}
+.about-me-image{
+    border-radius: 3px;
+}
+.profile__image{
+    width: 130px;
+    float: right;
+    margin: 0 20px 0 40px;
+}
+.card__1 p{
+    margin: 0 0 10px 10px;
+    padding-bottom: 5px;
+}
+.card__1 h3{
+    margin: auto;
+    width: 250px;
+    text-align: center;
+    font-weight: bold;
+    color: #130f0f;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3a3a3a63;
+}
+.flag__image{
+    width: 200px;
+    float: left;
+    margin: 0 15px 2px 10px;
 }
 .card__2{
     grid-column: 2 / 3;
+    margin-right: 30px;
 }
-
-
 footer{
-    grid-row: 3;
+    background-color: #164583;
+    text-align: center;
+    padding: 20px;
+}
+footer p:first-child{
+    color: #fff;
+    font-size: 18px;
+}
+footer p:last-child{
+    color: #ffe920;
 }

@@ -47,7 +47,7 @@ main{
     gap: 20px;
 }
 .card{
-    margin: 20px 0;
+    margin: 20px;
     border: 2px solid #0003;
     border-radius: 10px;
     overflow: hidden;
@@ -95,10 +95,16 @@ main{
     grid-column: 2 / 3;
     margin-right: 30px;
 }
+.resources-list{
+    margin-left: 30px;
+}
+.resource-link{
+    font-size: 20px;
+}
 footer{
     background-color: #164583;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 footer p:first-child{
     color: #fff;

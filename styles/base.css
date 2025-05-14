@@ -41,7 +41,7 @@ main{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    max-width: auto;
+    max-width: 1400px;
 }
 .card{
     margin: 20px;

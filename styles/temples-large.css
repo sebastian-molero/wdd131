@@ -20,4 +20,11 @@
     .temples{
         grid-template-columns: repeat(3, 1fr);
     }
+    .temples img{
+        width: 230px;
+        height: 130px;
+    }
+    .temples figcaption{
+        font-size: 15px;
+    }
 }

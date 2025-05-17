@@ -20,9 +20,12 @@
     .temples{
         grid-template-columns: repeat(3, 1fr);
     }
+    .temples figure{
+        text-align: center;
+    }
     .temples img{
-        width: 230px;
-        height: 130px;
+        width: auto;
+        height: 150px;
     }
     .temples figcaption{
         font-size: 15px;

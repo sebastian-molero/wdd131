@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <meta name="description" content="Temples of the Church of Jesus Christ of Latter-day Saints">
+    <meta name="author" content="Sebastian Molero">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js"defer></script>
+</head>
+<body>
+    <header class="header">
+        <h2 class="nav-title">Temple Album</h2>
+        <button id="hamburger-menu"></button>
+        <nav id="navbar">
+            <ul class="nav-list">
+                <li class="list-item"><a class="link" href="#">Home</a></li>
+                <li class="list-item"><a class="link" href="#">Old</a></li>
+                <li class="list-item"><a class="link" href="#">New</a></li>
+                <li class="list-item"><a class="link" href="#">Large</a></li>
+                <li class="list-item"><a class="link" href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="album-title">Welcome to the Temple Album</h1>
+        <section class="temples">
+            <figure>
+                <img src="images/bogota_colombia_temple_lds.jpeg" alt="Bogotá, Colombia Temple" loading="lazy">
+                <figcaption>Bogotá, Colombia</figcaption>
+            </figure>
+            <figure>
+                <img src="images/columbia_river_temple_lds.jpeg" alt="Columbia River, Washington Temple" loading="lazy">
+                <figcaption>Columbia River, Washington</figcaption>
+            </figure>
+            <figure>
+                <img src="images/manila_philippines_temple_lds.jpeg" alt="Manila, Philippines Temple" loading="lazy">
+                <figcaption>Manila, Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paris_france_temple_exterior.jpeg" alt="Paris, France Temple" loading="lazy">
+                <figcaption>Paris, France</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome_italy_temple.jpeg" alt="Rome, Italy Temple" loading="lazy">
+                <figcaption>Rome, Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt_lake_temple_lds.jpeg" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake, Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sao_paulo_brazil_temple_lds.jpeg" alt="Sao Paulo, Brazil Temple" loading="lazy">
+                <figcaption>Sao Paulo, Brazil</figcaption>
+            </figure>
+            <figure>
+                <img src="images/seoul_korea_temple_lds.jpeg" alt="Seoul, Korea Temple" loading="lazy">
+                <figcaption>Seoul, Korea</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple_rendering_barcelona_spain_temple.jpeg" alt="Barcelona, Spain Temple" loading="lazy">
+                <figcaption>Barcelona, Spain</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sebastián Molero. Bogotá, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
+
+
+

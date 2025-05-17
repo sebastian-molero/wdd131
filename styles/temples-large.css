@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        background-color: transparent;
+        position: static;
+        width: auto;
+    }
+    #hamburger-menu{
+        display: none;
+    }
+    .nav-list{
+        flex-direction: row;
+        gap: 30px;
+        padding: 0;
+    }
+    .temples{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

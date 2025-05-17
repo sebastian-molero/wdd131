@@ -12,6 +12,11 @@ header{
     background-color: #49ffff2f;
     position: relative;
 }
+.nav-text{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
 #navbar{
     display: flex;
     flex-direction: column;

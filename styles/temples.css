@@ -103,7 +103,7 @@ h2{
 
 .temples img{
     width: 340px;
-    height: 200px;
+    height: auto;
     border-radius: 10px;
 }
 footer{

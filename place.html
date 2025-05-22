@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="">
+    <meta name="author" content="Sebastian Molero">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="main-title">COLOMBIA</h1>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="Andes Condor" width="400px" height="271px">
+            </picture>
+        </div>
+        <div class="info-container">
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 1,141,748 sq km</li>
+                    <li><strong>Population:</strong> 53.68 millon</li>
+                    <li><strong>Capital:</strong> Bogotá D.C.</li>
+                    <li><strong>Languages:</strong> Spanish</li>
+                    <li><strong>Currency:</strong> Colombian Peso</li>
+                    <li><strong>Time Zone:</strong> UTC - 5</li>
+                    <li><strong>Calling Code:</strong> +57</li>
+                    <li><strong>Internet TDL:</strong> .co</li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="wheter icon">
+                <ul>
+                    <li><strong>Temperature:</strong> 25°C</li>
+                    <li><strong>Conditions:</strong> Cloudy</li>
+                    <li><strong>Wind:</strong> 6 Km/h</li>
+                    <li><strong>Wind Chill:</strong><span id="windChillResult"></span>°C</li>
+                </ul>
+            </section>
+        </div>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sebastián Molero. Bogotá, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

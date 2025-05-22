@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    text-align: center;
+    padding: 25px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    background: linear-gradient(to right, #eeff00 30%, #00f , #f00 );
+}
+main{
+    position: relative;
+}
+picture img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.data, .weather{
+    position: absolute;
+    color: #222;
+    background-color: #eee;
+    box-shadow: 0 0 15px #0009;
+    text-align: right;
+    border-radius: 4px;
+    padding: 10px 14px;
+}
+.data{
+    top: 40px;
+    left: 25px;
+    width: 300px;
+}
+.data h2, .weather h2{
+    position: relative;
+    right: 25px;
+    text-align: left;
+    background-color: #043d04c4;
+    padding: 8px 20px;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+.data ul, .weather ul{
+    list-style: none;
+}
+.data ul li, .weather ul li{
+    margin: 5px 0;
+}
+.weather{
+    bottom: 100px;
+    right: 30px;
+    width: 300px;
+    height: 180px;
+    font-size: 18px;
+}
+.weather h2::after {
+    content: "⛅";
+    font-size: 40px;
+    position: absolute;
+    left: 150px;
+    bottom: 2px;
+}
+.weather img{
+    display: none;
+}
+.weather-icon{
+    display: none;
+    width: 50px;
+    height: auto;
+    margin: 10px auto;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    background-color: #111;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width: 1000px){
+    .weather-icon{
+        display: block;
+        }
+    .info-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin: 30px auto;
+    }
+    .data, .weather{
+        position: static;
+        margin: 0 auto;
+        width: 40%;
+        height: auto;
+        text-align: center;
+    }
+    .data h2, .weather h2{
+        position: static;
+        text-align: center;
+    }
+    .weather img{
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: auto;
+    }
+    .weather h2::after {
+        content: none;
+}
+}
+@media screen and (max-width: 550px){
+    .info-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .data, .weather{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .weather{
+        height: 250px;
+    }
+    .weather img{
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: auto;
+}
+}

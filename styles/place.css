@@ -1,19 +1,31 @@
+:root{
+    --main-font: 'Roboto', sans-serif;
+    --header-bg: linear-gradient(to right, #eeff00 30%, #00f , #f00 );
+    --section-bg: #eee;
+    --section-shadow: 0 0 15px #0009;
+    --section-title-bg: #043d04c4;
+    --title-header-footer-color: #ddd;
+    --footer-bg: #111;
+    --icon-size: 50px;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
 }
+
 header{
     text-align: center;
     padding: 25px 0;
     color: #fff;
     font-weight: bold;
     font-size: 25px;
-    background: linear-gradient(to right, #eeff00 30%, #00f , #f00 );
+    background: var(--header-bg);
 }
+
 main{
     position: relative;
 }
@@ -25,8 +37,8 @@ picture img{
 .data, .weather{
     position: absolute;
     color: #222;
-    background-color: #eee;
-    box-shadow: 0 0 15px #0009;
+    background-color: var(--section-bg);
+    box-shadow: var(--section-shadow);
     text-align: right;
     border-radius: 4px;
     padding: 10px 14px;
@@ -40,7 +52,7 @@ picture img{
     position: relative;
     right: 25px;
     text-align: left;
-    background-color: #043d04c4;
+    background-color: var(--section-title-bg);
     padding: 8px 20px;
     color: #fff;
     font-weight: 800;
@@ -67,21 +79,15 @@ picture img{
     left: 150px;
     bottom: 2px;
 }
-.weather img{
-    display: none;
-}
 .weather-icon{
     display: none;
-    width: 50px;
-    height: auto;
-    margin: 10px auto;
 }
 
 footer{
     text-align: center;
     padding: 20px 0;
-    color: #fff;
-    background-color: #111;
+    color: var(--title-header-footer-color);
+    background-color: var(--footer-bg);
     font-weight: bold;
     font-size: 20px;
 }
@@ -107,10 +113,10 @@ footer{
         position: static;
         text-align: center;
     }
-    .weather img{
+    .weather-icon{
         display: block;
         margin: 0 auto;
-        width: 50px;
+        width: var(--icon-size);
         height: auto;
     }
     .weather h2::after {
@@ -129,10 +135,10 @@ footer{
     .weather{
         height: 250px;
     }
-    .weather img{
+    .weather-icon{
         display: block;
         margin: 0 auto;
-        width: 50px;
+        width: var(--icon-size);
         height: auto;
 }
 }

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    width: 400px;
+    border: 1px solid #0004;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+caption{
+    caption-side: bottom;
+    font-size: smaller;
+    padding: 2px;
+}
+thead{
+    color: #fff;
+    background-color: #000;
+}
+th, td{
+    padding: 3px 6px;
+    border: 1px solid #0004;
+    white-space: pre;
+}
+th{
+    padding: 1rem;
+    font-size: larger;
+}
+tr:nth-child(2){
+    background-color: #333;
+}
+tbody tr:nth-child(2){
+    background-color: #eee;
+}
+td:empty{
+    background-color: #000;
+}

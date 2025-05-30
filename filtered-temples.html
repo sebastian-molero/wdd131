@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Photo Album</title>
+    <meta name="description" content="Temples of the Church of Jesus Christ of Latter-day Saints">
+    <meta name="author" content="Sebastián Molero">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+</head>
+<body>
+    <header class="header">
+        <h1 class="nav-text">Temple Album</h1>
+        <button id="hamburger-menu" aria-label="Open Menu"></button>
+        <nav id="navbar">
+            <ul class="nav-list">
+                <li id="home" class="list-item"><a class="link" href="#">Home</a></li>
+                <li id="old" class="list-item"><a class="link" href="#">Old</a></li>
+                <li id="new" class="list-item"><a class="link" href="#">New</a></li>
+                <li id="large" class="list-item"><a class="link" href="#">Large</a></li>
+                <li id="small" class="list-item"><a class="link" href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="album-title">Welcome to the Temple Album</h2>
+        <div class="res-grid">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sebastián Molero. Bogotá, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
+
+
+

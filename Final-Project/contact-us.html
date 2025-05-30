@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonders Of South America | Contact Us</title>
+    <meta name="description" content="Get in touch with us to learn more about the best destinations in South America">
+    <meta name="author" content="Sebastián Molero">
+    <link rel="stylesheet" href="styles/contact-us.css">
+    <script src="scripts/contact-us.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav__container">
+            <h2>Wonders Of South America</h2>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__list__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__list__item"><a href="destinations.html" class="nav__link">Destinations</a></li>
+                    <li class="nav__list__item"><a href="contact-us.html" class="nav__link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>If you have questions or want help planning your next adventure in South America, we'd love to hear from you.</p>
+        </section>
+        <div>
+            <form action="" class="contact-form">
+                <fieldset>
+                    <legend>Basic Information</legend>
+                    <label>Full Name:
+                        <input type="text" required placeholder="John Doe">
+                    </label>
+                    <label>Email Address:
+                        <input type="email" required placeholder="example@gmail.com">
+                    </label>
+                    <label >Phone Number:
+                        <input type="tel" placeholder="+1 1234567890">
+                    </label>
+                    <label>Country of Residence
+                        <input type="text">
+                    </label>
+                </fieldset>
+            <fieldset>
+                <legend>About Your Trip</legend>
+                <label>Which Country Do You Want To Visit
+                    <select>
+                        <option value="">-- Select a Country --</option>
+                        <option value="Arg">Argentina</option>
+                        <option value="Bol">Bolivia</option>
+                        <option value="Bra">Brazil</option>
+                        <option value="Chi">Chile</option>
+                        <option value="Col">Colombia</option>
+                        <option value="Ecu">Ecuador</option>
+                        <option value="Gui">Guiana</option>
+                        <option value="Par">Paraguay</option>
+                        <option value="Per">Peru</option>
+                        <option value="Sur">Surinam</option>
+                        <option value="Uru">Uruguay</option>
+                        <option value="Ven">Venezuela</option>
+                        <option value="idk">I don't know</option>
+                    </select>
+                </label>
+                <label>What Kind of Experience Are You Interested In:
+                    <select>
+                        <option value="">-- Select an Activity --</option>
+                        <option value="nature">Nature & Wildlife</option>
+                        <option value="beach">Beaches</option>
+                        <option value="adventure">Extreme Adventures</option>
+                        <option value="culture">History & Culture</option>
+                        <option value="food">Gastronomy</option>
+                        <option value="eco">Ecotourism</option>
+                        <option value="not-sure">I'm Not Sure</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>How Did You Hear About Us?</legend>
+                <label><input type="checkbox" value="google">Google</input></label>
+                <label><input type="checkbox" value="social">Social Media</input></label>
+                <label><input type="checkbox" value="friend">A Friend</input></label>
+                <label><input type="checkbox" value="">Other</input></label>
+            </fieldset>
+            <label>Message:
+                <textarea rows="5"></textarea>
+            </label>
+            <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sebastián Molero. Bogotá, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

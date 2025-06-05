@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff3;
+    color: #333;
+}
+
+main{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 50px;
+}
+h1{
+    text-align: center;
+    color: #195086;
+}
+.form{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #eee;
+    box-shadow: 0 0 10px 0 #0005;
+    border-radius: 5px;
+}
+.form h2{
+    text-align: center;
+    color: #195086;
+}
+
+label{
+    display: block;
+    margin-top: 14px;
+    padding-top: 6px;
+    margin-bottom: 2px;
+}
+label[for="productName"]::after,
+div:has(+label[for^="rate"])::after,
+label:has(+ input[type="date"])::after{
+    content: "*";
+    color: #bd1d1d;
+}
+select, 
+input[type="date"], 
+textarea, 
+input[type="text"]{
+    width: 100%;
+    padding: 10px 0 10px 5px;
+    font-size: 17px;
+    border-radius: 6px;
+}
+input:required, select:required{
+    border-left: 4px solid #bd1d1d;
+}
+
+input:required:valid, select:required:valid{
+    border-left: 4px solid #1d681d;
+}
+
+label:has(input[type="radio"]:checked){
+    color: #d1ce00;
+}
+
+div{
+    margin-top: 14px;
+    padding-top: 6px;
+}
+div > span {
+    display: block;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+label > span{
+    color: #195086;
+}
+label:has(input[type="checkbox"], input[type="radio"]){
+    padding: 2px 0;
+    margin: 2px 0;
+}
+
+textarea{
+    resize: vertical;
+    min-width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 15px 0 #0008;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+footer{
+    text-align: center;
+    color: #fff;
+    background-color: #111;
+    padding: 20px;
+    
+}

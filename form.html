@@ -19,54 +19,55 @@
         <form action="review.html" method="get" class="form">
 
 
-        <label for="productName">Product Name</label>
-        <select name="productName" id="productName" required>
-            <option value="" disabled selected>Select a Product...</option>
-        </select>
-
-
-        <div>Overall Rating</div>
-        <label for="rate1">
-            <input type="radio" name="rating" id="rate1" value="1" required>★
-        </label>
-        <label for="rate2">
-            <input type="radio" name="rating" id="rate2" value="2">★★
-        </label>
-        <label for="rate3">
-            <input type="radio" name="rating" id="rate3" value="3">★★★
-        </label>
-        <label for="rate4">
-            <input type="radio" name="rating" id="rate4" value="4">★★★★
-        </label>
-        <label for="rate5">
-            <input type="radio" name="rating" id="rate5" value="5">★★★★★
-        </label>
-
-
-        <label for="installationDate">Date of Installation</label>
-        <input type="date" name="installationDate" id="installationDate" required>
-
-
-        <div>Which features did you find useful in the product? <span>(Check all that apply)</span></div>
-        <label>
-            <input type="checkbox" name="features[]" id="durability" value="Durability"> Durability</label>
-        <label>
-            <input type="checkbox" name="features[]" id="easeToUse" value="Ease to Use"> Ease to Use</label>
-        <label>
-            <input type="checkbox" name="features[]" id="performance" value="Performance"> Performance</label>
-        <label>
-            <input type="checkbox" name="features[]" id="design" value="Design"> Design</label>
-
-
-        <label for="review">Written Review <span>(Optional)</span></label>
-        <textarea name="review" id="review" rows="4" placeholder="Write your review here..."></textarea>
-
-
-        <label for="username">Your Name <span>(Optional)</span></label>
-        <input type="text" name="username" id="username" placeholder="John Doe">
+            <label for="productName">Product Name</label>
+            <select name="productName" id="productName" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
     
     
-        <input type="submit" value="Post Review" />
+            <div>Overall Rating</div>
+            <label for="rate1">
+                <input type="radio" name="rating" id="rate1" value="1" required>★
+            </label>
+            <label for="rate2">
+                <input type="radio" name="rating" id="rate2" value="2">★★
+            </label>
+            <label for="rate3">
+                <input type="radio" name="rating" id="rate3" value="3">★★★
+            </label>
+            <label for="rate4">
+                <input type="radio" name="rating" id="rate4" value="4">★★★★
+            </label>
+            <label for="rate5">
+                <input type="radio" name="rating" id="rate5" value="5">★★★★★
+            </label>
+    
+    
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" name="installationDate" id="installationDate" required>
+    
+    
+            <div>Which features did you find useful in the product? <span>(Check all that apply)</span></div>
+            <label>
+                <input type="checkbox" name="features[]" id="durability" value="Durability"> Durability</label>
+            <label>
+                <input type="checkbox" name="features[]" id="easeToUse" value="Ease to Use"> Ease to Use</label>
+            <label>
+                <input type="checkbox" name="features[]" id="performance" value="Performance"> Performance</label>
+            <label>
+                <input type="checkbox" name="features[]" id="design" value="Design"> Design</label>
+    
+    
+            <label for="review">Written Review <span>(Optional)</span></label>
+            <textarea name="review" id="review" rows="4" placeholder="Write your review here..."></textarea>
+    
+    
+            <label for="username">Your Name <span>(Optional)</span></label>
+            <input type="text" name="username" id="username" placeholder="John Doe">
+        
+        
+            <input type="submit" value="Post Review" />
+        </form>
     </main>
     
     <footer>

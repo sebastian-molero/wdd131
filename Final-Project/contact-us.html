@@ -7,20 +7,21 @@
     <meta name="description" content="Get in touch with us to learn more about the best destinations in South America">
     <meta name="author" content="Sebastián Molero">
     <link rel="stylesheet" href="styles/contact-us.css">
-    <script src="scripts/contact-us.js"></script>
+    <script src="scripts/contact-us.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="header__nav__container">
             <h2>Wonders Of South America</h2>
-            <nav class="header__nav">
-                <ul class="nav__list">
-                    <li class="nav__list__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__list__item"><a href="destinations.html" class="nav__link">Destinations</a></li>
-                    <li class="nav__list__item"><a href="contact-us.html" class="nav__link">Contact Us</a></li>
-                </ul>
-            </nav>
+            <button class="hamburger" id="mobile__menu"></button>
         </div>
+        <nav>
+            <ul class="navigation" id="nav__menu">
+                <li class="nav__list__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__list__item"><a href="destinations.html" class="nav__link">Destinations</a></li>
+                <li class="nav__list__item"><a href="contact-us.html" class="nav__link">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
@@ -47,33 +48,13 @@
             <fieldset>
                 <legend>About Your Trip</legend>
                 <label>Which Country Do You Want To Visit
-                    <select>
-                        <option value="">-- Select a Country --</option>
-                        <option value="Arg">Argentina</option>
-                        <option value="Bol">Bolivia</option>
-                        <option value="Bra">Brazil</option>
-                        <option value="Chi">Chile</option>
-                        <option value="Col">Colombia</option>
-                        <option value="Ecu">Ecuador</option>
-                        <option value="Gui">Guiana</option>
-                        <option value="Par">Paraguay</option>
-                        <option value="Per">Peru</option>
-                        <option value="Sur">Surinam</option>
-                        <option value="Uru">Uruguay</option>
-                        <option value="Ven">Venezuela</option>
-                        <option value="idk">I don't know</option>
+                    <select required class="countryOfInterest">
+                        <option value="" disabled selected>-- Select a Country --</option>
                     </select>
                 </label>
                 <label>What Kind of Experience Are You Interested In:
-                    <select>
-                        <option value="">-- Select an Activity --</option>
-                        <option value="nature">Nature & Wildlife</option>
-                        <option value="beach">Beaches</option>
-                        <option value="adventure">Extreme Adventures</option>
-                        <option value="culture">History & Culture</option>
-                        <option value="food">Gastronomy</option>
-                        <option value="eco">Ecotourism</option>
-                        <option value="not-sure">I'm Not Sure</option>
+                    <select required class="experiences">
+                        <option value="" disabled selected>-- Select an Activity --</option>
                     </select>
                 </label>
             </fieldset>
@@ -90,6 +71,7 @@
             <input type="submit" value="Send Message">
             </form>
         </div>
+        <p class="userGreeting"></p>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Sebastián Molero. Bogotá, Colombia</p>

@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
     const products = [
         {
             id: "fc-1888",
@@ -37,4 +36,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('currentyear').textContent = new Date().getFullYear();
     document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
-});

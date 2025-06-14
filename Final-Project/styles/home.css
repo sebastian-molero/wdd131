@@ -103,7 +103,7 @@ main{
     padding: 20px 17%;
 }
 h1{
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
 }
 h1 ~ p{
